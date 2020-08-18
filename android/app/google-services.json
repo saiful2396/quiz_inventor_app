@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "191819811875",
+    "firebase_url": "https://quizinventor.firebaseio.com",
+    "project_id": "quizinventor",
+    "storage_bucket": "quizinventor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191819811875:android:b04d0010a6f7957aa17596",
+        "android_client_info": {
+          "package_name": "com.kabir.quiz_inventor_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191819811875-fj590q6g7h3fk506ukc9rusb90kfv35k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_zLQMJrwPJiay6-2DCyP-UhdrDabR24M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191819811875-fj590q6g7h3fk506ukc9rusb90kfv35k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
