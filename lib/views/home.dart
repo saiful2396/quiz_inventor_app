@@ -34,6 +34,8 @@ class _HomeState extends State<Home> {
                           .data['quizDesc'],
                       title: snapshot.data.documents[index]
                           .data['quizTitle'],
+                      quizId: snapshot.data.documents[index]
+                          .data['quizId'],
                     );
                   }
               );
@@ -44,7 +46,7 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
-    databaseService.getQuizData().then((val) {
+    databaseService.getQuizesData().then((val) {
       setState(() {
         quizStream = val;
       });
@@ -78,18 +80,23 @@ class QuizTile extends StatelessWidget {
   final String imgUrl;
   final String title;
   final String desc;
+  final String quizId;
 
   QuizTile({
     @required this.imgUrl,
     @required this.title,
-    @required this.desc});
+    @required this.desc,
+    @required this.quizId
+  });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (){
         Navigator.push(context,
-            MaterialPageRoute(builder: (_)=>PlayQuiz()));
+            MaterialPageRoute(builder: (_)=>PlayQuiz(
+                quizId
+            )));
       },
       child: Container(
         margin: EdgeInsets.only(bottom: 8),
